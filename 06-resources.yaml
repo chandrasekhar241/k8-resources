@@ -10,6 +10,6 @@ spec:
       requests: #softlimit
         cpu: "100m" #1000m is 1 cpu
         memory: "128Mi"
-      limites: # hard limit
+      limits: # hard limit
         cpu: "150m"
         memory: "256Mi"
