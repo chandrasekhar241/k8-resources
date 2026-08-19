@@ -12,5 +12,5 @@ spec:
     image: nginx 
     env:
     - name: project
-      value: roboshop
+      value: "roboshop"
     
