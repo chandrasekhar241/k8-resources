@@ -13,13 +13,13 @@ spec:
       name: nginx-logs
   - name: almalinux
     image: almalinux:9
-    command: ["sleep","10000"]
+    command: ["sleep", "10000"]
     volumeMounts:
     - mountPath: /mnt/nginx-logs
       name: nginx-logs
       readOnly: true
 
-    volumes:
-    - name: nginx-logs
-      emptyDir:
-        sizeLimit: 500Mi
+  volumes:
+  - name: nginx-logs
+    emptyDir:
+      sizeLimit: 500Mi
